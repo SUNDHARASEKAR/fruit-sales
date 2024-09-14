@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>organic fruits | online</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="index.js"></script>
+  </head>
+  <Style>
+    body{
+      background-image: linear-gradient(
+      to right,
+      rgb(245, 218, 182) 0%,
+      rgb(136, 240, 136) 100%,
+      rgb(5, 143, 108) 100%
+    );
+    }
+  </Style>
+  <body>
+    <!-- fixed content -->
+    <form action="https://web.whatsapp.com/">
+      <button type="submit" class="fix">need to help?</button>
+    </form>
+    <!-- navigation bar -->
+    <header>
+      <nav>
+          <ul class='nav-bar'>
+              <li class='logo'><a href='#'><img src='logo.jpg'/></a></li>
+              <input type='checkbox' id='check' />
+              <span class="menu">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="products.html">Products</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="login.html">Login</a></li>
+                  <li><a href="signup.html">SignUp</a></li>
+                  <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+              </span>
+              <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+          </ul>
+      </nav>
+      </header>
+      <!-- <h3 style="position: fixed;">cart:<span id="output"></span></h3>
+      <button onclick="remove()" style="position: fixed;top: 120px;">Remove</button> -->
+    <!-- button creation -->
+    <div class="content3">
+      <form action="importedfruits.html">
+        <button type="submit">imported fruits</button>
+      </form>
+      <form action="localfruits.html">
+        <button type="submit">local fruits</button>
+      </form>
+      <form action="freshbar.html">
+        <button type="submit">fresh bar</button>
+      </form>
+      <form action="dryfruits.html">
+        <button type="submit">dry fruits</button>
+      </form>
+    </div>
+    <!-- fruits container -->
+    <div class="content4">
+      <h1>imported fruits</h1>
+      <div class="head1">
+        <div class="img1">
+          <img src="fru21.jpg" alt="fruit" />
+          <h3>shimla orange</h3>
+          <p>$450/-</p>
+          <button onclick="countclick()" type="submit">add to card</button>
+        </div>
+        <div class="img1">
+          <img src="fru22.jpg" alt="fruit" />
+          <h3>muskmelon</h3>
+          <p>$430/-</p>
+          <button onclick="countclick()" type="submit">add to card</button>
+        </div>
+        <div class="img1">
+          <img src="fru23.jpg" alt="fruit" />
+          <h3>yellow watermelon</h3>
+          <p>$400/-</p>
+          <button onclick="countclick()" type="submit">add to card</button>
+        </div>
+        <div class="img1">
+          <img src="fru24.jpeg" alt="fruit" />
+          <h3>red watermelon</h3>
+          <p>$350/-</p>
+          <button onclick="countclick()" type="submit">add to card</button>
+        </div>
+        <div class="img1">
+          <img src="fru25.jpg" alt="fruit" />
+          <h3>green banana</h3>
+          <p>$250/-</p>
+          <button onclick="countclick()" type="submit">add to card</button>
+        </div>
+        <div class="img1">
+          <img src="fru26.jpg" alt="fruit" />
+          <h3>lychee</h3>
+          <p>$460/-</p>
+          <button onclick="countclick()" type="submit">add to card</button>
+        </div>
+        <div class="img1">
+          <img src="fru27.webp" alt="fruit" />
+          <h3>dragan fruit</h3>
+          <p>$680/-</p>
+          <button onclick="countclick()" type="submit">add to card</button>
+        </div>
+        <div class="img1">
+          <img src="fru28.jpg" alt="fruit" />
+          <h3>avacoda</h3>
+          <p>$500/-</p>
+          <button onclick="countclick()" type="submit">add to card</button>
+        </div>
+      </div>
+      </div>
+    <!-- footer content -->
+    <footer class="content5">
+      <div class="footer">
+        <div class="bot1">
+          <ul>
+            <li>
+              1st floor,57 , dindigul, dindigul urban, tamil nadu, 624710.
+            </li>
+            <li><a href="">0709455600</a></li>
+            <li><a href="">support@organic.in</a></li>
+          </ul>
+        </div>
+        <hr />
+        <h3>follow us</h3>
+        <a href="https://www.facebook.com/login/" class="fa fa-facebook"></a>
+        <a href="https://x.com/i/flow/login" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+      </div>
+    </footer>
+    <!-- footer navbar -->
+    <footer class="content6">
+      <nav class="nav1">
+        <ul>
+          <li><a href="terms&conditions.html">terms and conditions</a>|</li>
+          <li><a href="privacypolicy.html">our privacy policy</a>|</li>
+          <li><a href="shipping.html">shipping details</a>|</li>
+          <li><a href="refund.html">refund policy</a>|</li>
+        </ul>
+      </nav>
+    </footer>
+    <script>
+      var count=0;
+      var output=document.getElementById('output');
+      function countclick(){
+        count++;
+        output.innerHTML=count;
+      }
+      function remove(){
+        count--;
+        output.innerHTML=count;
+      }
+    </script>
+  </body>
+  </html>
+
